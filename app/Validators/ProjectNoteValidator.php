@@ -14,16 +14,12 @@ use Prettus\Validator\LaravelValidator;
  *
  * @author ASUS
  */
-class ProjectValidator extends LaravelValidator {
+class ProjectNoteValidator extends LaravelValidator {
     
     protected $rules = [
-        'owner_id' => 'required|integer',
-        'client_id' => 'required|integer',
-        'name' => 'required',
-        'description' => 'required',
-        'progress' => 'required',
-        'status' => 'required',
-        'due_date' => 'required',
+        'project_id' => 'required|integer',
+        'title' => 'required',
+        'note' => 'required',
     ];
     
 }
