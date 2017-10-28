@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use CodeProject\Entities\Client;
 use CodeProject\Http\Requests;
 use CodeProject\Http\Controllers\Controller;
-use CodeProject\Repositories\ClientRepositoryEloquent;
+use CodeProject\Repositories\ClientRepository;
 
 class ClientController extends Controller
 {
@@ -16,7 +16,7 @@ class ClientController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(ClientRepositoryEloquent $repository)
+    public function index(ClientRepository $repository)
     {
         return $repository->all();
     }

@@ -16,7 +16,7 @@ use CodeProject\Entities\Client;
  *
  * @author ASUS
  */
-class ClientRepositoryEloquent extends BaseRepository{
+class ClientRepositoryEloquent extends BaseRepository implements ClientRepository{
     
     
     public function model()
