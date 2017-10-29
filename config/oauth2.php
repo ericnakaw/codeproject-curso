@@ -30,7 +30,7 @@ return [
     'grant_types' => [
         'password' => [
             'class' => '\League\OAuth2\Server\Grant\PasswordGrant',
-            'callback' => '\CodeProject\PasswordGrantVerifier@verify',
+            'callback' => '\CodeProject\OAuth\PasswordGrantVerifier@verify',
             'access_token_ttl' => 3600
         ]
     ],
