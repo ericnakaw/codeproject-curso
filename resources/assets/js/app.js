@@ -1,10 +1,12 @@
-var app = angular.module('app',[]);
+var app = angular.module('app',['ngRoute','app.controllers']);
+
+angular.module('app.controllers',[]);
 
 app.config(function($routeProvider){
 	$routeProvider
 		.when('/login',{
 			templateUrl: 'build/views/login.html',
-			controller: 'LogionController'
+			controller: 'LoginController'
 		})
 		.when('/home',{
 			templateUrl: 'build/views/home.html',
